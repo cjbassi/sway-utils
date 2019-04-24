@@ -2,17 +2,31 @@
 
 Miscellaneous commands for use with Swaywm.
 
-#### Subcommands:
+### Subcommands:
 
-##### focused-window-pwd
+#### focused-program-cwd
 
-Prints the cwd of the focused window.
+Prints the cwd of the focused program.
 
 Can be used to open a new terminal in the same directory as the currently focused one. Example keybind:
 
 ```
-bindsym $mod+Shift+Return exec alacritty --working-directory $(sway-utils focused-window-pwd)
+bindsym $mod+Shift+Return exec alacritty --working-directory $(sway-utils focused-window-cwd)
 ```
+
+#### focused-program-kill
+
+Kills the focused program.
+
+Used to close the focused program, not just the focused window. Useful for closing Chrome and other multi window programs. Example keybind:
+
+```
+bindsym $mod+Shift+w exec sway-utils focused-program-kill
+```
+
+#### focused-program-pid
+
+Prints the PID of the focused program.
 
 ## Installation
 
@@ -32,7 +46,3 @@ bash <(curl -LSfs https://japaric.github.io/trust/install.sh) \
 ```bash
 cargo install --git https://github.com/cjbassi/sway-utils
 ```
-
-## TODO
-
-- subcommand to kill an application like Chrome

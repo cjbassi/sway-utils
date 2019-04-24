@@ -11,10 +11,10 @@ pub struct Args {
 
 #[derive(StructOpt, Debug)]
 pub enum Subcommand {
-    /// todo
-    #[structopt(name = "todo")]
-    Todo {
-        #[structopt(name = "days")]
-        todo: Option<f64>,
+    /// Prints the cwd of application running in the focused window.
+    #[structopt(name = "focused-window-pwd")]
+    FocusedWindowPwd {
+        #[structopt(name = "terminal")]
+        terminal: String,
     },
 }

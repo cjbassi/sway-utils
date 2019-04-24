@@ -1,5 +1,19 @@
 # sway-utils
 
+Miscellaneous commands for use with Swaywm.
+
+#### Subcommands:
+
+##### focused-window-pwd
+
+Prints the cwd of the focused window.
+
+Can be used to open a new terminal in the same directory as the currently focused one. Example keybind:
+
+```
+bindsym $mod+Shift+Return exec alacritty --working-directory $(sway-utils focused-window-pwd)
+```
+
 ## Installation
 
 ### Prebuilt binaries:
@@ -21,5 +35,4 @@ cargo install --git https://github.com/cjbassi/sway-utils
 
 ## TODO
 
-- subcommand to pwd of focused terminal
 - subcommand to kill an application like Chrome

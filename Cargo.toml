@@ -12,4 +12,3 @@ path = "src/main.rs"
 structopt = "0.2.15"
 # i3ipc = "0.10.1"
 i3ipc = { path = "../../other-projects/i3ipc-rs" }
-dirs = "1.0.5"

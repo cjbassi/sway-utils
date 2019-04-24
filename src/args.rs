@@ -13,8 +13,5 @@ pub struct Args {
 pub enum Subcommand {
     /// Prints the cwd of application running in the focused window.
     #[structopt(name = "focused-window-pwd")]
-    FocusedWindowPwd {
-        #[structopt(name = "terminal")]
-        terminal: String,
-    },
+    FocusedWindowPwd {},
 }

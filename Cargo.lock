@@ -158,7 +158,7 @@ dependencies = [
 
 [[package]]
 name = "sway-utils"
-version = "0.1.0"
+version = "0.2.0"
 dependencies = [
  "i3ipc 0.10.1 (git+https://github.com/cjbassi/i3ipc-rs?branch=node/pid)",
  "structopt 0.2.15 (registry+https://github.com/rust-lang/crates.io-index)",

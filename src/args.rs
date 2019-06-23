@@ -4,9 +4,6 @@ use structopt::StructOpt;
 pub struct Args {
     #[structopt(subcommand)]
     pub subcommand: Subcommand,
-
-    #[structopt(short = "v", long = "verbose")]
-    pub verbose: bool,
 }
 
 #[derive(StructOpt, Debug)]

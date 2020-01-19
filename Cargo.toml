@@ -11,4 +11,4 @@ path = "src/main.rs"
 [dependencies]
 structopt = "0.2.15"
 # i3ipc = "0.10.1"
-i3ipc = { git = "https://github.com/cjbassi/i3ipc-rs", branch = "node/pid" }
+i3ipc = { git = "https://github.com/cjbassi/i3ipc-rs", branch = "node/pid", features = ["sway-1-1"] }
